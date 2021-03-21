@@ -57,7 +57,7 @@ bucketPromise.then(
     var uploadPromise = new AWS.S3({apiVersion: '2006-03-01'}).putObject(objectParams).promise();
     uploadPromise.then(
       function(data) {
-        console.log("Successfully uploaded data to " + bucketName + "/" + keyName);
+        console.log("Successfully uploadedddd data to " + bucketName + "/" + keyName);
       });
 }).catch(
   function(err) {
